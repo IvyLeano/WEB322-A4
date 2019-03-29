@@ -1,0 +1,11 @@
+body {
+    background-color: azure;
+}
+.navbar-default {
+    background-color: lightblue;
+}
+
+#cs, #wel, #about, #addEmp, #addImg, #img, #employees {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 32px;
+}

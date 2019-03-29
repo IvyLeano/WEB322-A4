@@ -1,0 +1,25 @@
+<style>@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');</style>
+<div class="row">
+    <div class="col-md-12">
+    <h2 id="employees">Employees</h2>
+      <hr />
+      <div class="table-responsive">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Department Number</th>
+                      <th>Department Name</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {{#each departments}}
+                    <tr>
+                        <td><a href="/employees?department={{departmentId}}">{{departmentId}}</a></td>
+                        <td><a href="/employees?department={{departmentId}}">{{departmentName}}</a></td>
+                    </tr>
+                  {{/each}}
+              </tbody>
+          </table>
+      </div>
+    </div>
+</div>
