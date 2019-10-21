@@ -76,16 +76,21 @@
                         <div class="form-group">
                             <label for="isManager">Manager:</label>
                             {{#if employee.isManager}}
-                            <input class="form-control" type="checkbox" id="isManager" name="isManager">
-                            {{else}}
                             <input class="form-control" type="checkbox" id="isManager" name="isManager" checked="">
+                            {{else}}
+                            <input class="form-control" type="checkbox" id="isManager" name="isManager">
                             {{/if}}
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="employeeManagerNum">Employee's Manager Number:</label>
+                            {{!-- <input class="form-control" id="employeeManagerNum" name="employeeManagerNum" type="text" value=""> --}}
+                            {{#if employee.isManager}}
                             <input class="form-control" id="employeeManagerNum" name="employeeManagerNum" type="text" value="">
+                            {{else}}
+                            <input class="form-control" id="employeeManagerNum" name="employeeManagerNum" type="text" value="{{employee.employeeManagerNum}}" />
+                            {{/if}}
                         </div>
                     </div>
                     <div class="col-md-3">
